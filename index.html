@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete Webpage Example</title>
+    <style>
+        /* Global styling */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Table styling */
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid white;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #7FDBDB;
+            font-weight: bold;
+        }
+        td {
+            background-color: #7FDBDB;
+        }
+
+        /* List box styling */
+        .list-box {
+            border: 1px solid black;
+            padding: 10px;
+            width: fit-content;
+            margin-bottom: 20px;
+        }
+
+        /* Links box styling */
+        .links-box {
+            border: 1px solid black;
+            background-color: #f2f2f2;
+            padding: 10px;
+            width: fit-content;
+            margin-bottom: 30px;
+        }
+        a {
+            margin-right: 10px;
+        }
+
+        /* Registration form styling */
+        .form-container {
+            border: 1px solid black;
+            padding: 20px;
+            width: 500px;
+        }
+        .form-container h2 {
+            text-align: center;
+            color: blue;
+        }
+        .form-container table {
+            width: 100%;
+            border: none;
+        }
+        .form-container td {
+            padding: 5px;
+            border: none;
+        }
+        .form-container input[type=text],
+        .form-container input[type=password],
+        .form-container input[type=email],
+        .form-container textarea,
+        .form-container select {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+        .form-container input[type=checkbox],
+        .form-container input[type=radio] {
+            margin-right: 5px;
+        }
+        .form-container input[type=submit] {
+            margin-top: 10px;
+            padding: 8px 16px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Table Section -->
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+<!-- Nested List Section -->
+<div class="list-box">
+    <p>Lists can be nested (list inside list):</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+</div>
+
+<!-- Links Section -->
+<div class="links-box">
+    <p>Click any of the following links</p>
+    <a href="https://example.com" target="_blank">Opens in New</a> |
+    <a href="https://example.com" target="_self">Opens in Self</a> |
+    <a href="https://example.com" target="_parent">Opens in Parent</a> |
+    <a href="https://example.com" target="_top">Opens in Body</a>
+</div>
+
+<!-- Registration Form Section -->
+<div class="form-container">
+    <h2>Registration form</h2>
+    <form>
+        <table>
+            <tr><td>First Name</td><td><input type="text" name="fname"></td></tr>
+            <tr><td>Last Name</td><td><input type="text" name="lname"></td></tr>
+            <tr><td>Email</td><td><input type="email" name="email"></td></tr>
+            <tr><td>Password</td><td><input type="password" name="pwd"></td></tr>
+            <tr><td>Re-enter Password</td><td><input type="password" name="repwd"></td></tr>
+            <tr><td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                </td>
+            </tr>
+            <tr><td>Age:</td><td><input type="text" name="age"></td></tr>
+            <tr><td>Phone Number</td><td><input type="text" name="phone"></td></tr>
+            <tr><td>Address</td><td><textarea name="address" rows="3"></textarea></td></tr>
+            <tr><td>State</td><td><input type="text" name="state"></td></tr>
+            <tr><td>Country</td>
+                <td>
+                    <select name="country">
+                        <option>Choose your country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr><td>Languages known</td>
+                <td>
+                    <input type="checkbox" name="lang" value="english">English
+                    <input type="checkbox" name="lang" value="kannada">Kannada
+                    <input type="checkbox" name="lang" value="hindi">Hindi
+                    <input type="checkbox" name="lang" value="telugu">Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration" checked> Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Log in to <a href="https://acharya.ac.in" target="_blank">Acharya</a> website
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Register">
+    </form>
+</div>
+
+</body>
+</html>
